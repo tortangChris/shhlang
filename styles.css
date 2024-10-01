@@ -1,0 +1,164 @@
+/* Basic reset for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+/* Container for the table */
+.table-container {
+    width: 80%;  /* Adjust as needed (80% of the screen width) */
+    margin: 50px auto; /* Center the container vertically and horizontally */
+    padding: 20px;
+    background-color: #c0dcec;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    max-width: 1200px; /* Limit the max width */
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+/* Table headers */
+thead tr {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+}
+
+thead th {
+    padding: 12px;
+    background-color: #4caf9d;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 1px solid #ddd;
+}
+
+/* Table rows and data */
+tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+tbody td {
+    padding: 12px;
+    color: #555;
+    border: 1px solid #ddd;
+}
+
+/* Row hover effect */
+tbody tr:hover {
+    background-color: #f1f1f1; /* Slightly darker shade on hover */
+    transition: background-color 0.3s ease-in-out;
+}
+
+.form-container {
+    width: 400px;  /* Adjust the width of the form container */
+    margin: auto;  /* Centers the container horizontally */
+    padding: 20px;
+    background-color: #4caf9d;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the container vertically and horizontally */
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Submit button styling */
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the submit button */
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Button Container */
+.button-container {
+    text-align: right;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 1200px;
+}
+
+/* Add Product Button */
+.btn-add {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.btn-add:hover {
+    background-color: #45a049;
+}
+
+/* Delete and Update Button Links in the table */
+a[href] {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+a[href].btn-delete {
+    background-color: #e74c3c;
+}
+
+a[href].btn-delete:hover {
+    background-color: #c0392b;
+}
+
+a[href].btn-update {
+    background-color: #3498db;
+}
+
+a[href].btn-update:hover {
+    background-color: #2980b9;
+}
